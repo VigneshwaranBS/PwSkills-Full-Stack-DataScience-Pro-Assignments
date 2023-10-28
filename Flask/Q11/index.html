@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Time Update</title>
+</head>
+<body>
+    <h1>Real-Time Time Update</h1>
+    <p id="time">Current Time: Loading...</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.0/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('update_time', function(data) {
+            var timeElement = document.getElementById('time');
+            timeElement.innerHTML = 'Current Time: ' + data;
+        });
+    </script>
+</body>
+</html>
