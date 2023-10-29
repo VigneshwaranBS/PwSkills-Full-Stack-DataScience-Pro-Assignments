@@ -7,8 +7,8 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Change this to a secure secret key
 
 # Configure Google OAuth
-google_bp = make_google_blueprint(client_id='447908045942-hfe9t0dn8dolgu237dbceb52b88a0khv.apps.googleusercontent.com',
-                                   client_secret='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',
+google_bp = make_google_blueprint(client_id='447908045942-hfe9t0dn8d7dbceb52b88a0khv.apps.googleusercontent.com',
+                                   client_secret='GOCSPX-nAwYpS9X_FwH1jd2dTd',
                                    redirect_to='google_login')
 app.register_blueprint(google_bp, url_prefix='/google_login')
 
