@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Articles</h1>
+    <ul>
+        {% for article in recommendations %}
+        <li>{{ article.title }} (Category: {{ article.category }})</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>

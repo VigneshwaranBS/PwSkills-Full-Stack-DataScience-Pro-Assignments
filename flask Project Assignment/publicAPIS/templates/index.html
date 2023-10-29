@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Information</title>
+</head>
+<body>
+    <h1>Country Information</h1>
+    <ul>
+        {% for country in data %}
+            <li>
+                <strong>Name:</strong> {{ country.name.common }}<br>
+                <strong>Capital:</strong> {{ country.capital[0] if country.capital else "N/A" }}<br>
+                <strong>Region:</strong> {{ country.region[0] if country.region else "N/A" }}<br>
+                <strong>Population:</strong> {{ country.population | default("N/A") }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
