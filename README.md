@@ -1,2 +1,2 @@
-# PwSkills-Full-Stack-DataScience-Pro-Assignments.
+# PwSkills-Full-Stack-DataScience-Pro-Assignments
 
